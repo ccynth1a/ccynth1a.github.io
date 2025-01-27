@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+                                                            
+  --bg-color: #fef4e8;           
+  --text-color: #5a3d2b;
+  --form-bg: #fff;
+  --button-bg: #f7c6a4;
+  --button-hover-bg: #e5b094;
+  --overlay-bg: rgba(0,0,0,0.5);
+                                                            
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+                                                            
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 
+    "about-me deer-pic-1 education"
+    "about-me experience deer-pic-2"
+    "projects projects contact-me"
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container > div {
+  background-color: var(--form-bg);
+  border: 2px solid #e0c9b3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container > h2 {
+  margin: 0;
+  font-size: 14px;
+  color: #a3876b;
 }
 
-.App-link {
-  color: #61dafb;
+.container h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a3d2b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  width: 5px;
+  height: auto;
+  object-fit: contain;
 }
+
+.about-me { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "icon icon icon"
+    "icon icon icon"
+    "info info info";
+  grid-area: about-me;
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.info {
+  grid-area: info;
+}
+
+.deer-pic-1 { grid-area: deer-pic-1; }
+.deer-pic-2 { grid-area: deer-pic-2; }
+.education { grid-area: education; }
+.experience { grid-area: experience; }
+.projects { grid-area: projects; }
+.contact-me { grid-area: contact-me; }
