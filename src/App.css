@@ -35,6 +35,10 @@
     "projects projects contact-me"
 }
 
+.container a {
+  text-decoration: none;
+}
+
 .container > div {
   background-color: var(--form-bg);
   border: 2px solid #e0c9b3;
@@ -59,29 +63,52 @@
 }
 
 .image {
-  width: 5px;
+  width: 100%;
+  max-width: 60%;
   height: auto;
   object-fit: contain;
+  border-radius: 15px
 }
 
 .about-me { 
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 10px; 
   grid-template-areas: 
-    "icon icon icon"
-    "icon icon icon"
-    "info info info";
+    "icon"
+    "info";
   grid-area: about-me;
+  align-items: center;
+  text-align: center;
 }
 
 .icon {
   grid-area: icon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 4px solid #e5b094;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #f9e5d7, #fef4e8);
+  width: 90%;
+  height: auto;
 }
 
 .info {
   grid-area: info;
+  text-align: left;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.info p {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
 }
 
 .deer-pic-1 { grid-area: deer-pic-1; }
