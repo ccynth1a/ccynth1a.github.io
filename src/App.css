@@ -253,13 +253,14 @@ timeline li {
   position: relative
 }
 
+/* Below is from GPT, i spent ages tearing my hair out trying to get a small contact me box to work */
 .contact-me {
-  background-color: var(--bg-color);  /* Light background */
-  color: var(--text-color);            /* Text color */
-  padding: 0.5rem 1rem;                /* Small padding */
-  border-radius: 10px;                  /* Slightly rounded corners */
-  font-size: 1.9rem;                   /* Smaller text */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small shadow for contrast */
+  background-color: var(--bg-color);  
+  color: var(--text-color);            
+  padding: 0.5rem 1rem;               
+  border-radius: 10px;               
+  font-size: 1.9rem;                
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,28 +268,28 @@ timeline li {
 }
 
 .contact-me h1 {
-  font-size: 1.5rem;                     /* Smaller heading */
-  margin-bottom: 0.5rem;               /* Small space below heading */
-  text-align: center;                  /* Center the heading */
+  font-size: 1.5rem;                    
+  margin-bottom: 0.5rem;               
+  text-align: center;                 
 }
 
 .social-links {
-  font-size: 1.0rem;                   /* Smaller links */
-  line-height: 1.4;                    /* Tight line height */
-  text-align: center;                  /* Center align the links */
+  font-size: 1.0rem;                 
+  line-height: 1.4;                 
+  text-align: center;              
 }
 
 .social-links p {
-  margin-bottom: 0.5rem;               /* Small space between links */
+  margin-bottom: 0.5rem;          
 }
 
 .social-links a {
-  color: var(--text-color);            /* Use the text color for links */
-  text-decoration: none;               /* Remove underline */
-  font-weight: bold;                   /* Bold the links */
-  transition: color 0.3s ease;         /* Smooth color change on hover */
+  color: var(--text-color);      
+  text-decoration: none;        
+  font-weight: bold;           
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--button-bg);             /* Hover color */
+  color: var(--button-bg);   
 }
