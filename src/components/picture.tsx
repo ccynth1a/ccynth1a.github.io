@@ -2,12 +2,12 @@
 type PictureArgs = {
   src: string;
   alt: string;
-  position: string;
+  classes: string;
 }
 
-const Picture = ({src, alt, position}: PictureArgs) => {
+const Picture = ({src, alt, classes}: PictureArgs) => {
   return (
-    <div className={`icon ${position}`}>
+    <div className={`${classes}`}>
       <img src={src} alt={alt} className="image"/>
     </div>
   )

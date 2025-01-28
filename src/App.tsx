@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="container">
       <AboutMe />
-      <Picture src="white-tailed-deer.jpg" alt="A White Tailed Deer Buck" position="deer-pic-1" />
+      <Picture src="white-tailed-deer.jpg" alt="A White Tailed Deer Buck" classes="deer-pic-1" />
       <Education />
       <Experience />
-      <Picture src="fallow-deer.jpg" alt="A Fallow Buck Resting on the Grass" position="deer-pic-2"/>
+      <Picture src="fallow-deer.jpg" alt="A Fallow Buck Resting on the Grass" classes="deer-pic-2"/>
       <ContactMe />
       <Projects />
     </div>
