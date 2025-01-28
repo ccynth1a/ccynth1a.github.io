@@ -7,8 +7,8 @@ type PictureArgs = {
 
 const Picture = ({src, alt, classes}: PictureArgs) => {
   return (
-    <div className={`${classes}`}>
-      <img src={src} alt={alt} className="image"/>
+    <div className={`${classes} relative`}>
+        <img src={src} alt={alt} className="image"/>
     </div>
   )
 }
